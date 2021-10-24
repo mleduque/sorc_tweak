@@ -1,0 +1,25 @@
+BACKUP ~weidu_external/sorc_tweak~
+AUTHOR ~mleduque~
+
+LANGUAGE "English"
+    "english"
+    "languages/english/setup.tra"
+
+LANGUAGE "Français"
+    "french"
+    "languages/french/setup.tra"
+
+BEGIN @1 DESIGNATED 1
+SUBCOMPONENT @0
+REQUIRE_FILE ~splsrckn.2da~ @100
+
+
+COPY_EXISTING ~sorc_tweak/add_one/splsrckn.2da~  ~override~
+
+
+BEGIN @2 DESIGNATED 2
+SUBCOMPONENT @0
+REQUIRE_FILE ~splsrckn.2da~ @100
+
+
+COPY_EXISTING ~sorc_tweak/add_one_continue_progression/splsrckn.2da~  ~override~
